@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900');
+  
+html {
+  display: grid;
+  min-height: 100%;
+}
+
+/*body {
+  display: grid;
+  background-image: url("hbd.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  height: 100%;
+  background-size: 100%;
+
+}*/
+body{
+  background-color:rgb(168, 228, 156);
+  display: grid;
+  background-size: 100%;
+  margin: 0;
+  
+  
+
+}
+.container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 650px;
+  height: 480px;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  margin-top: 2em;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color:  #8d0d71;
+
+}
+
+#timer {
+  color:  #F6F4F3;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: .7em;
+  letter-spacing: 5px;
+  margin-top: 25%;
+}
+
+.days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 20px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.days {
+  background: #EF2F3C;
+}
+
+.hours {
+  background: #F6F4F3;
+  color: #183059;
+
+}
+
+.minutes {
+  background: #276FBF;
+}
+
+.seconds {
+  background: #F0A202;
+  
+}
+
+.numbers {
+  font-family: 'Montserrat', sans-serif;
+
+  color: #183059;
+  font-size: 4em;
+}
+
+.white {
+  position: absolute;
+  background: #F6F4F3;
+
+  height: 85px;
+  width: 75px;
+  left: 30%;
+  top: 2%;
+}
+.triangle1{
+    border-bottom: 14px solid  #F6F4F3;
+
+}
+.string1{
+  background: #F6F4F3;
+
+  border: 1px solid #f0eeed;
+
+}
+
+
+.red {
+  position: absolute;
+  background: red;
+  left: 18%;
+  top: 9%;
+  height: 65px;
+  width: 70px;
+ 
+}
+.triangle2 {
+  border-bottom: 14px solid red;
+}
+.string2{
+  background: red;
+  border: 1px solid red;
+}
+.blue {
+  position: absolute;
+  background: #276FBF;
+  height: 80px;
+  width: 80px;
+  left: 60%;
+  top: 5%;
+ 
+}
+.triangle {
+  border-bottom: 14px solid #276FBF;
+}
+.string {
+  background: #276FBF;
+  border: 1px solid #276FBF;
+}
+.balloon {
+  border: 1px solid #000;
+  border-radius: 50% 50% 50% 50%/ 40% 40% 60% 60%;
+  z-index: 2;
+}
+
+.eye {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 40%;
+  left: 22%;
+  background: #000;
+  border-radius: 50%;
+ 
+}
+.after {
+  content: '';
+  left: 35px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+}
+.mouth {
+  position:absolute;
+  top: 45%;
+  left: 43%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.happy {
+  border: 2px solid;
+  border-color: transparent #000 #000 transparent;
+  transform: rotate(45deg);
+}
+
+.triangle {
+  position: absolute;
+  left: 40%;
+  bottom: -10%;
+  width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+}
+
+.string {
+  position: absolute;
+  height: 70px;
+  width: 1px;
+  left: 48%;
+  top: 100%;
+  z-index: -1;
+}
+.triangle1 {
+  position: absolute;
+  left: 40%;
+  bottom: -10%;
+  width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+}
+
+.string1 {
+  position: absolute;
+  height: 70px;
+  width: 1px;
+  left: 48%;
+  top: 100%;
+  z-index: -1;
+}
+.triangle2 {
+  position: absolute;
+  left: 40%;
+  bottom: -10%;
+  width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+}
+
+.string2 {
+  position: absolute;
+  height: 70px;
+  width: 1px;
+  left: 48%;
+  top: 100%;
+  z-index: -1;
+}
+
+
+
+.star {
+  width: 20px;
+  height: 20px;
+  background: rgb(236, 240, 15);
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.star-red {
+  width: 30px;
+  height: 30px;
+  margin-left: 51px;
+  margin-top: -5px;
+  background: red;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;;
+  font-size: 0.7em;
+  
+  
+}
+p {
+  letter-spacing: 3px;
+  color: red;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+:hover {
+  color: rgb(94, 11, 226);
+}
+/*.share-btn{
+ 
+  width: 100px;
+  height: 50px;
+  background: #dfe6e9;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: .3s linear;
+}
+.share-btn:hover{
+  transform: scale(1.1);
+
+}
+.share-btn span{
+  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #2d3436;
+  columns: #f1f1f1;;
+  text-align: center;
+  line-height: 80px;
+  z-index: 999;
+  transition: .6s linear;
+  border-radius: 40px;
+  opacity: 0;
+}
+.share-btn:hover span{
+  transform: translateX(-100%);
+  transition-delay: .3s;
+
+}
+.share-btn a{
+  flex: 1;
+  font-size: 26px;
+  color: #2d3436;
+  text-align: center;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 0.3s linear;
+
+}
+.share-btn:hover a{
+  opacity: 1;
+  transform: translateX(0);
+
+}
+.share-btn a{
+  transition-delay: 0.3s;
+}*/
+
+p1{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.share-button{
+  width: 70px;
+  height: 70px;
+  background: #dfe6e9;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+.share-button:hover{
+  transform: scale(1.1);
+}
+
+.share-button span{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #2d3436;
+  color: #f1f1f1;
+  text-align: center;
+  line-height: 80px;
+  z-index: 999;
+  transition: .6s linear;
+  border-radius: 40px;
+}
+
+.share-button:hover span{
+  transform: translateX(-100%);
+  transition-delay: .3s;
+}
+
+.share-button a{
+  flex: 1;
+  font-size: 26px;
+  color: #2d3436;
+  text-align: center;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.share-button:hover a{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.share-button a:nth-of-type(1){
+  transition-delay: 1s;
+}
