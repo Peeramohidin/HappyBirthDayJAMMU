@@ -336,59 +336,35 @@ a {
 p1{
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: 10;
 }
-.share-button{
-  width: 70px;
-  height: 70px;
-  background: #dfe6e9;
-  border-radius: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
+button{
+  border: none;
+  border-radius: 10px;
+  
+  background-color:green;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  margin: 4px 2px;
   cursor: pointer;
-  transition: .3s linear;
 }
-
-.share-button:hover{
-  transform: scale(1.1);
-}
-
-.share-button span{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #2d3436;
-  color: #f1f1f1;
+.fa{
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  height: 100px;
   text-align: center;
-  line-height: 80px;
-  z-index: 999;
-  transition: .6s linear;
-  border-radius: 40px;
-}
+  text-decoration: none;
+  margin: 5px 2px;
 
-.share-button:hover span{
-  transform: translateX(-100%);
-  transition-delay: .3s;
 }
-
-.share-button a{
-  flex: 1;
-  font-size: 26px;
-  color: #2d3436;
-  text-align: center;
-  transform: translateX(-100%);
-  opacity: 0;
-  transition: 0.3s linear;
+.fa:hover{
+  opacity: 0.7;
 }
-
-.share-button:hover a{
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.share-button a:nth-of-type(1){
-  transition-delay: 1s;
+.fa-whatsapp{
+  
+  color: white;
 }
