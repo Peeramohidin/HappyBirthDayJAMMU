@@ -22,15 +22,22 @@ let timer = setInterval(function() {
   let seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
   // display
-  document.getElementById("timer").innerHTML =
-    "<div class=\"days\"> \
-    <div class=\"numbers\">" + days + "</div>days</div> \
-    <div class=\"hours\"> \
-    <div class=\"numbers\">" + hours + "</div>hours</div> \
-    <div class=\"minutes\"> \
-    <div class=\"numbers\">" + minutes + "</div>minutes</div> \
-    <div class=\"seconds\"> \
-    <div class=\"numbers\">" + seconds + "</div>seconds</div> \
-    </div>";
+  if (diff >0){
+    document.getElementById("timer").innerHTML =
+      "<div class=\"days\"> \
+      <div class=\"numbers\">" + days + "</div>days</div> \
+      <div class=\"hours\"> \
+      <div class=\"numbers\">" + hours + "</div>hours</div> \
+      <div class=\"minutes\"> \
+      <div class=\"numbers\">" + minutes + "</div>minutes</div> \
+      <div class=\"seconds\"> \
+      <div class=\"numbers\">" + seconds + "</div>seconds</div> \
+      </div>";
+  }
+  if (diff < 0){
+    clearInterval(timer);
+    document.getElementById("timer").innerHTML="Happy Birthday To You Jammu"
+  }
+
 
 }, 1000);
