@@ -1,6 +1,4 @@
-
 var countDownDate = new Date("Nov 27, 2020 00:00:00").getTime();
-
 // countdown
 let timer = setInterval(function() {
 
@@ -11,10 +9,6 @@ let timer = setInterval(function() {
   let diff;
   diff= countDownDate - today;
   
-
-
-
-
   // math
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
   let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -34,10 +28,11 @@ let timer = setInterval(function() {
       <div class=\"numbers\">" + seconds + "</div>seconds</div> \
       </div>";
   }
+  
   if (diff < 0){
     clearInterval(timer);
-    document.getElementById("timer").innerHTML="Happy Birthday To You Jammu"
-  }
+    document.getElementById("timer").hidden=true;
 
+  }
 
 }, 1000);
